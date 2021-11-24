@@ -1,1 +1,521 @@
-print
+"""def prendiValoreInput():
+    a = int(input("enter number_1:"))
+    b = int(input("enter number_2:"))
+    operazione = input("inserisci quale operazione fare sui numeri:")
+    if operazione == "addizione":
+        print(a + b )
+    elif operazione == "sottrazione":
+        print(a - b )
+    elif operazione == "moltiplicazione":
+        print(a * b)
+    else:
+        print(a / b)
+prendiValoreInput()"""
+
+"""
+#dati due numeri in input eseguire le operazioni di somma, sottrazione e moltiplicazione a seconda dell'operazione richiesta in input
+def prendiValoreInput():
+    a = int(input("enter number_1:"))
+    b = int(input("enter number_2:"))
+    operazione = input("inserisci quale operazione fare sui numeri:")
+    if operazione == "somma":
+        print("risultato:" , a + b )
+    elif operazione == "sottrazione":
+        print("risultato:", a - b) 
+    elif operazione == "moltiplicazione":
+        print("risultato:" , a * b)
+    else:
+        print("risultato:", a / b)
+prendiValoreInput()
+"""
+"""
+def somma_da_1_n():
+    numero = int(input("inserisci il numero da sommare:"))
+    risultato = 0
+    for i in range(1, numero):
+        risultato = numero + i
+    print(risultato)
+somma_da_1_n()
+"""
+"""
+n=int(input("inserisci il numero  n:"))
+def conto_alla_rovescia():  
+    for i in range(5,n-1):
+        print(n)
+conto_alla_rovescia()   
+"""
+"""
+#conto alla rovescio per n inserito da input
+def contoallarovescia():
+    n=int(input("inserisci il numero n:"))
+    while n>0:
+        print(n)
+        n=n-1
+    print("stop")
+contoallarovescia()
+"""
+
+"""
+#moltiplicazione di un numero per n volte inserito in input
+def moltiplicazione_da_1_n():
+    risultato = 1
+    numero = int(input("inserisci il numero da moltiplicare:"))
+    for i in range(1, numero+1):
+        risultato = numero * i
+    print("risultato:", risultato)
+moltiplicazione_da_1_n()
+"""
+"""
+def moltiplicazione_da_1_n():
+    risultato = 1
+    numero = int(input("inserisci il numero da moltiplicare:"))
+    i=1
+    while(i<=
+"""
+"""
+def moltipliacazione_del_2():
+    n = int(input("inserisci il numero da moltiplicare:"))
+    for i in range(1, 11):
+        risultato = n * i
+    print("il risultato è:",risultato)
+moltipliacazione_del_2()
+"""
+
+"""def n_positivo():
+    numero = int(input("inserisci il munero:"))
+    if numero > 0:
+        print("il numero è positivo !")
+    elif numero == 0:
+        print("numero ne positivo e ne negaivo")
+    else:
+        print ("il numero è negativo!")
+n_positivo()
+"""
+
+"""
+n = 0
+while n <= 10:
+    print(n)
+    n= n + 1
+"""
+    
+"""
+for n in range(11):
+    print(n)
+"""
+
+"""
+for i in range(5):
+    print ('Ciao!')
+"""    
+"""
+n=0
+while n <= 4:
+    print("ciao!")
+    n+=1
+"""   
+""""
+n=5
+while n > 0:
+    print(n)
+    n= n-1
+"""
+"""
+for n in range(0,4):
+    print(n)
+"""    
+"""
+for n in range(1,5):
+    if n==3:break
+    print(n)
+"""
+"""
+# programma che stampa nel terminale 10 volte una stringa da input
+s=input("inserisci la stringa:")
+conta = 0
+while conta < 10:
+    print(s)
+    conta = conta + 1
+"""
+"""
+# programma che stampa nel terminale 10 volte una stringa
+s=input("inserisci la stringa:")
+conta = 0
+while conta < 10:
+    if conta > 5:
+        print(s)
+        conta = conta + 1
+"""
+"""
+s=input("inserisci la stringa:")
+conta = 0
+while conta < 10:
+    if conta > 5:
+        print(s)
+    else:
+        print(s)
+    conta = conta + 1
+"""
+"""
+# presi due numeri staparne il maggiore
+n1 = int(input("inserire il primo numero n1:"))
+n2 = int(input("inserire il secondo mumero n2:"))
+if n1>n2:
+    print("il numero maggiore è n1:" , n1)
+elif n1<n2:
+    print("il numero maggiore è n2:" , n2)
+else:
+    print("i due numeri sono uguali")
+"""
+"""
+# dato un numero n preso in input stampare i numeri pari che vanno da 1 ad n
+n = int(input("inserire il numero n:"))
+for contatore in range(1,n):
+    if contatore % 2 == 0 :
+        print(contatore)
+"""
+
+"""
+# dato un numero n preso in input stampare i numeri dispari che vanno da 1 ad n
+n = int(input("inserire il numero n:"))
+for contatore in range(1,n):
+    if contatore % 2 == 1 :
+        print(contatore)
+"""
+"""
+# dato un numero n preso in input stampare i numeri dispari che vanno da 1 ad n
+n = int(input("inserire il numero n:"))       
+for contatore in range(1,n):
+    while n>0 and contatore>0:
+        print(contatore)
+"""
+"""
+n = input("inserire la stringa:")
+contatore = 10
+for contatore in range(0,contatore+1):
+    print(contatore)
+print(contatore)
+"""
+"""
+# data una stringa, stampare la lunchezza della stringa e leggere tutta la stringa
+stringa_da_attraversare = "augusto"
+print("la lunghezza della stringa è:",len(stringa_da_attraversare))
+contatore=0
+while (contatore < len(stringa_da_attraversare)):
+        carattere= stringa_da_attraversare[contatore]
+        print(carattere)
+        contatore = contatore +1
+"""
+"""     
+# data una stringa, stamparne la lunghezza,leggere tutta la stringa stamparne su una sola linea
+stringa_da_attraversare = input("inserire la stringa da leggere:")
+print("la lunghezza della stringa è:", len(stringa_da_attraversare))
+contatore=0
+while (contatore < len(stringa_da_attraversare)):
+        carattere= stringa_da_attraversare[contatore]
+        print(carattere, end=" " )
+        contatore = contatore +1      
+"""
+"""
+# data una stringa, stamparne la lunghezza,leggere tutta la stringa stamparne su una sola linea
+stringa_da_attraversare = input("inserire la stringa da leggere:")
+print("la lunghezza della stringa è:", len(stringa_da_attraversare))
+for carattere in stringa_da_attraversare:
+    print(carattere, end="")
+"""   
+"""
+# trovare l'indice di una lettera in una parola inserita in input
+parola ="parola utente"
+lettera = "a"
+indice = 0
+indice_lettera_trovata = -1
+while(indice < len(parola)):
+    if parola[indice] == lettera :
+        print(indice)
+    indice = indice + 1
+print()
+"""
+"""
+# trovare l'indice di una lettera in una parola inserita in input
+def abs(n):
+... if n < 0:
+... return -n # eseguito se n è negativo
+... return n # eseguito se n è positivo
+lettera=input("inserire la lettera da cercare:")
+print(len(parola))
+indice=0
+while(indice < len(parola)):
+    if parola[indice] == lettera:
+        print(indice)
+    indice = indice + 1                                                         
+""" 
+    
+"""
+# calcola la lunghezza di una stringa in input
+stringa = input("inserisci la stringa:")
+contatore = 0
+lunghezza_stringa = 0
+while (contatore < len(stringa)):
+        lunghezza_stringa = lunghezza_stringa +1
+        contatore = contatore +1
+print(lunghezza_stringa)
+
+"""
+"""
+# calcola la lunghezza di una stringa in input
+stringa = input("inserisci la stringa:")
+lunghezza_stringa = 0
+for i in range(0,len(stringa)):
+        lunghezza_stringa = lunghezza_stringa +1
+print(lunghezza_stringa)
+"""
+"""
+# una funzione per ottenere una stringa composta da 4 copie degli ultimi due caratteri di una stringa in input
+s = input("inserisci la stringa:")
+while (len(s) < 2):
+    s = input("inserisci la stringa:")
+    ns = s[-2] + s[-1]
+
+print(ns)
+"""
+"""
+# scrivere un programma che data una stringa in imput ,la stampi n volte la lunghezza della stringa in upper e poi in lower
+stringa = input("inserisci la stringa:")
+print(len(stringa))
+contatore=0
+while(contatore < len(stringa)):
+    #print(stringa.upper())
+    print(stringa.upper(),"",end="")
+    print(stringa.lower())
+    contatore=contatore + 1
+"""
+"""
+# scrivere un programma che data una stringa in imput ,la stampi n volte la lunghezza della stringa in upper e poi in lower
+stringa = input("inserisci la stringa:")
+print(len(stringa))
+n=len(stringa)
+contatore=0
+while(contatore < len(stringa)):
+    #print(stringa.upper())
+    stringa_upper_2=stringa.upper() + " " + stringa.upper() + " " + stringa.upper()
+    print(stringa_upper_2,end="")
+    break
+stringa_upper_2=stringa.lower()*n
+print("",stringa_upper_2,end="")
+contatore=contatore + 1
+ """ 
+
+"""
+# scrivere un programma che data una stringa in imput ,la stampi in upper(maiuscolo) e poi in lower(minuscolo) sulla stessa linea
+stringa = input("inserisci la stringa:")
+for i in range(0,len(stringa)):
+    print(stringa.upper(), end="") 
+    break
+print("",stringa.lower(), end="")
+"""
+
+"""
+# scrivere un programma che data una stringa in imput, stampare in upper se contatore è pari se dispari in lower
+stringa = input("inserisci la stringa:")
+contatore=0
+print(len(stringa))
+while(contatore < len(stringa)):
+    nuova_stringa=stringa[contatore]
+    if contatore %2 == 0:
+        print(nuova_stringa.upper(),end="")
+    else:
+        contatore %3 == 0
+        print(nuova_stringa.lower(),end="")
+    contatore=contatore+1
+"""
+"""
+stringa=input("inserire la stringa:")
+for i in range(0,len(stringa)):
+    if len(stringa) %2 == 0:
+        print(stringa.upper())
+        break
+    else:
+        len(stringa) %3 == 0
+        print(stringa.lower())
+        break
+"""
+    
+"""
+# scrivere un programma che preso in imput una stringa, ritorni true oppure false se la lunghezza della stringa è un multiplo di 4
+stringa = input("inserisci la stringa:")
+print(len(stringa))
+for i in range(0,len(stringa)):
+    if len(stringa) % 4 == 0:
+        print("True")
+        break
+    else:
+        print("False")
+        break
+ """ 
+"""
+#scrivere una funzione che stampi(arrondando in maniera oopportuna) massimo fino ai primi due numeri dopo la virgola di un numero decimale
+def format_number():
+    print()
+"""
+"""
+# scrivere un programma per stampare i seguenti caratteri interi con zeri a sinistra della larghezza specificata
+n=input(""inserire il numero:"")
+numeri_di_zeri= "2"
+numero_di_stringa = 
+for in range(0, len(numero_di_stringa)):
+    numeri_di_zeri = numeri_di_zeri + "0"
+print(numeri_di_zeri + )
+
+"""
+"""
+def say_hello(name:"sono ",name2="sono 2"):
+        print(name)
+        print(name2)
+say_hello()
+"""
+"""
+def say_hello(param1:"param1 ",param2="sono 2"):
+        print(param1)
+        print(param2)
+say_hello()
+"""
+"""
+def abs(n):
+    if n < 0:
+    return -n # eseguito se n è negativo
+    return n # eseguito se n è positivo
+abs(3)
+"""
+"""
+#scrivere una funzione niente_e che restituisce true se la pareola contiene almeno una "e"altrimenti False
+def niente_e():
+   for lettera in parola:
+        if lettera == 'e':
+        return "False"
+return "True"
+"""
+"""
+# popolare una lista di n elementi con i primi n numeri pari.dopo averli inseriti visualizzare in output i valori memorizzati nella lista e la loro posizione
+def is_pari(n): #questa funzione se n è pari
+    if n%2 == 0:
+        return True
+    else:
+        return False
+n=int(input("inserisci un numero:"))
+lista_pari = []
+for i in range(0,n+1):
+    if is_pari(i):
+        lista_pari.append(i)
+contatore=0
+for numero_pari in lista_pari:
+    contatore=contatore+1
+    print("elemnto in posizione" + str(contatore-1) + ":" + str(numero_pari))
+"""
+"""
+# prendere in input 10 numeri dal terminale e stampare la sommatoria di questa lista
+lista_vuota=[]
+sommatoria=0
+while (len(lista_vuota) <=10):
+        n=int(input("n:"))
+        lista_vuota.append(n)
+for numero in lista_vuota:
+    sommatoria=sommatoria+1
+    print(sommatoria)
+
+"""
+"""
+# popolare una lista di n elementi di nmeri inseriti in input
+n=int(input("inserisci il numero:"))
+lista=[]
+for i in range(0,n+1):
+    lista.append(i)
+print(len(lista))
+print(lista)
+"""
+"""
+#data una lista vuota, inserire da input la lunghezza e popolarla con i relativi elementi
+lista_vuota=[]
+len(lista_vuota)
+l=int(input("inserire la lunghezza della lista:"))
+while (len(lista_vuota) <= l-1):
+        n=int(input("inserisi il numero:"))
+        lista_vuota.append(n)
+print(lista_vuota)
+len(lista_vuota)
+"""
+"""
+#date in imput due liste di elementi da terminale lunghe n1 e n2, stampare una lista in output che sia la differenza della 1 con la 2
+
+lista_vuota1=[]
+l_1=int(input("inseridci la lunghezza della lista1:"))
+lista_vuota2=[]
+l_2=int(input("inseridci la lunghezza della lista2:"))
+
+lista_result=[]
+while (len(lista_vuota1) <= l_1-1):
+        n=input("inseridci elemento in posizione" + str(i) + ":")
+        lista_vuota1.append(n)
+print(lista_vuota1)
+while (len(lista_vuota2) <= l_2-1):
+        n=input("inserisci elemento in posizione" + str(i) + ":")
+        lista_vuota2.append(n)
+print(lista_vuota2)
+for carattere in lista_vuota1:
+    while carattere in lista_vuota2:
+        lista_vuota1.remove(carattere)
+
+"""
+"""
+# 2 versione
+for carattere in lista_vuota1:
+    if carattere not in lista_vuota2:
+        lista_result.append(carattere)
+"""
+"""
+#scrivi un programma per trovare l'elenco di paroole piu lunghe di n da un determniato eleenco di parole.parametro n psaato in input.lista di parole invec cablato a codice
+n=int(input("inseisci parametro n :"))
+lista=[]
+l=int(input("inseridci la lunghezza della lista:"))
+list_copy = lista.copy()
+for elemento in lista:
+    if (len(elemento) < 2 ):
+            list_copy.remove(elemento)
+print(lista)
+
+
+# scrivere un programma per convertire una lista di cartteri in una stringa
+"""
+""""
+# scrivere un programma per aggiungere un elemto preso in input in una tupla
+t=("a","1", "c","t")
+s=str(input("inserisci elemto:" + " "))
+t2 = t + (s,)
+print(t2)
+"""
+"""
+#scrivere un programma per aggiungere un elemto preso in input in una tupla
+t=("a","b","c","d")
+print(t)
+l=list(t)
+print(type(l))
+e=str(input("inserisci elemnto:" + ""))
+l.append(e)
+print(l)
+t=tuple(l)
+print(t)
+"""
+#leggere una tupla,attraversamento di una tupla
+t=("a","b","c","d")
+for i in range(0,len(t)):
+    print(t[i])
+"""
+#scrivere un programma per rimuover un elemento da una tupla
+t=("a", "b", "c")
+s=str(input("inserisci elemto:" + ""))
+"""
+
+"""
+# scrivere un programma che inverte una tupla di elementi presi in input
+x= (1,2,3,4,5)
+print(x[::-1])
+"""
